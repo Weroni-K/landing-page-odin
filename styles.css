@@ -1,0 +1,169 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(121, 53, 121);
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 18%;
+  margin: 0;
+}
+
+.logo {
+  color: white;
+  display: flex;
+}
+
+.links-header {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: none;
+  flex: 1 auto;
+  background-color: rgb(121, 53, 121);
+  color: white;
+  gap: 48px;
+  padding: 48px;
+}
+
+.section1 .left {
+  width: 300px;
+}
+
+.section1 .right {
+  width: 300px;
+}
+
+.section1 .right img {
+  max-width: 300px;
+  max-height: 200px;
+}
+
+.section1 .left button{
+  background-color: rgb(114, 65, 146);
+  color: white;
+  border-radius: 8px;
+  padding: 8px 24px;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  color: rgb(121, 53, 121);
+  padding: 48px;
+}
+
+.section2 .containers {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  margin-top: 16px;
+}
+
+.section2 .containers .container {
+  width: 150px;
+}
+
+.section2 .containers .container img {
+  max-width: 150px;
+  max-height: 140px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 22px;
+}
+
+.section2 .containers .container .text {
+  text-align: center;
+}
+
+.section3 {
+  background-color: rgb(110, 80, 110);
+  padding: 42px 24%;
+  color: rgb(58, 18, 58);
+}
+
+.section3 h1 {
+  text-align: left;
+  font-weight: 200;
+}
+
+.section3 p {
+  text-align: right;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.section4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 74px;
+  background-color: rgb(114, 65, 146);
+  color: white;
+  margin: 48px auto;
+  border-radius: 12px;
+  padding: 32px 62px;
+}
+
+.section4 .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+}
+
+.section4 .left h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.section4 .left p {
+  margin: 0;
+  padding: 0;
+}
+
+.section4 .right button{
+  background-color: rgb(114, 65, 146);
+  color: white;
+  border-color: white;
+  border-radius: 8px;
+  padding: 8px 24px;
+}
+
+.footer {
+  background-color: rgb(121, 53, 121);
+  color: antiquewhite;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
