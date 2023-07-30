@@ -1,14 +1,26 @@
+:root {
+  --dirtyWhiteColor: #e8ecdc;
+  --primaryColor: #688196;
+  --secondaryColor: #0D0630;
+  --anotherColor: #18314F;
+  --optionalColor: #384E77;
+  --cambrigeColor: #8BBEB2;
+  --teaColor: #D3E1AA;
+  --purpleColor: rgb(121, 53, 121);
+}
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0;
+  background-color: var(--cambrigeColor);;
 }
 
 .header {
   display: flex;
   flex-direction: row;
-  background-color: rgb(121, 53, 121);
+  background-color: var(--optionalColor);
   align-items: center;
   justify-content: space-between;
   padding: 20px 18%;
@@ -16,16 +28,18 @@ body {
 }
 
 .logo {
-  color: white;
+  color:var(--dirtyWhiteColor);
   display: flex;
+  font-size: 1.6rem;
 }
 
 .links-header {
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: 4rem;
   margin: 0;
   padding: 0;
+  font-size: 1.6rem;
 }
 
 ul {
@@ -34,7 +48,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: white;
+  color:var(--dirtyWhiteColor);
 }
 
 .section1 {
@@ -43,10 +57,11 @@ a {
   justify-content: center;
   flex-wrap: none;
   flex: 1 auto;
-  background-color: rgb(121, 53, 121);
-  color: white;
-  gap: 48px;
-  padding: 48px;
+  background-color: var(--cambrigeColor);
+  color: var(--optionalColor);
+  gap: 4rem;
+  padding: 6rem;
+  margin-top: 4rem;
 }
 
 .section1 .left {
@@ -63,26 +78,44 @@ a {
 }
 
 .section1 .left button{
-  background-color: rgb(114, 65, 146);
-  color: white;
-  border-radius: 8px;
-  padding: 8px 24px;
+  z-index: 10;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  padding: 0.5rem 1rem;
+  color:var(--optionalColor);
+  background-color:var(--cambrigeColor);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  border-radius: 0.2rem;
+  border: solid;
+  border-color: var(--optionalColor);
+  outline: none;
+  min-width: 12rem;
+  min-height: 3.6rem;
 }
+
+.section1 .left button:hover {
+  transform: scale(1.01) rotate(-359.2deg);
+  opacity: 1;
+  cursor: pointer;
+}
+
 
 .section2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
-  color: rgb(121, 53, 121);
-  padding: 48px;
+  color:#384E77;
+  background-color: var(--dirtyWhiteColor);
+  padding: 6rem;
 }
 
 .section2 .containers {
   display: flex;
   flex-direction: row;
-  gap: 48px;
-  margin-top: 16px;
+  gap: 4rem;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
 }
 
 .section2 .containers .container {
@@ -103,9 +136,9 @@ a {
 }
 
 .section3 {
-  background-color: rgb(110, 80, 110);
+  background-color:#384E77;
   padding: 42px 24%;
-  color: rgb(58, 18, 58);
+  color:var(--dirtyWhiteColor);
 }
 
 .section3 h1 {
@@ -125,7 +158,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 74px;
-  background-color: rgb(114, 65, 146);
+  background-color: var(--optionalColor);
   color: white;
   margin: 48px auto;
   border-radius: 12px;
@@ -152,16 +185,31 @@ a {
 }
 
 .section4 .right button{
-  background-color: rgb(114, 65, 146);
-  color: white;
-  border-color: white;
-  border-radius: 8px;
-  padding: 8px 24px;
+  z-index: 10;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  padding: 0.5rem 1rem;
+  color:var(--optionalColor);
+  background-color:var(--cambrigeColor);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  border-radius: 0.2rem;
+  border: solid;
+  border-color: var(--optionalColor);
+  outline: none;
+  min-width: 12rem;
+  min-height: 3.6rem;
+}
+
+.section4 .right button:hover {
+  transform: scale(1.01) rotate(-359.2deg);
+  opacity: 1;
+  cursor: pointer;
 }
 
 .footer {
-  background-color: rgb(121, 53, 121);
-  color: antiquewhite;
+  background-color: var(--optionalColor);
+  color: var(--dirtyWhiteColor);
   height: 36px;
   display: flex;
   justify-content: center;
